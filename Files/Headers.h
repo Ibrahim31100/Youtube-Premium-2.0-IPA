@@ -80,12 +80,10 @@
 #import <YouTubeHeader/YTUIUtils.h>
 
 #define DownloadFix @"YouModDownloadFix"
-#define DownloadServerIndex @"YouModDownloadServerIndex"
 #define SABRDownload @"YouModSABRDownload"
 #define DownloadMethod @"YouModDownloadMethod" // index into the "Download method" picker
 #define DownloadMethodDirect 0   // YouTube's built-in stream URLs
-#define DownloadMethodServer 1   // external server (triggerSilentDownload…)
-#define DownloadMethodOnDevice 2 // on-device SABR engine
+#define DownloadMethodOnDevice 1 // on-device SABR engine
 
 #define IS_ENABLED(k) [[NSUserDefaults standardUserDefaults] boolForKey:k]
 #define INTFORVAL(v) [[NSUserDefaults standardUserDefaults] integerForKey:v]
